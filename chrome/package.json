@@ -1,0 +1,15 @@
+{
+    "name": "smartlike-chrome-extension",
+    "version": "0.0.1",
+    "author": "Smartlike developers <developers@smartlike.org>",
+    "license": "AGPL-3.0",
+    "scripts": {
+        "build": "npm install && rm -rf dist && cp -r src dist && browserify -r blakejs -s blakejs -o dist/third-party/blakejs.browser.js && browserify -r tweetnacl -s tweetnacl -o dist/third-party/tweetnacl.browser.js",
+        "clean": "rm -rf node_modules/ dist/ package-lock.json"
+    },
+    "dependencies": {
+        "blakejs": "^1.1.1",
+        "browserify": "^17.0.0",
+        "tweetnacl": "^1.0.3"
+    }
+}

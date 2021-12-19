@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Smartlike",
+    "short_name": "Smartlike",
+    "description": "Smartlike extension",
+    "version": "0.0.4",
+    "background": {
+        "service_worker": "worker_wrapper.js"
+    },
+    "action": {
+        "default_title": "Smartlike",
+        "default_icon": "/icons/like.png",
+        "default_popup": "popup.html"
+    },
+    "externally_connectable": {
+        "matches": ["https://*.smartlike.org/*"]
+    },
+    "permissions": [
+        "activeTab",
+        "notifications",
+        "storage"
+    ],
+    "icons": {
+        "16": "/icons/like-black.png",
+        "32": "/icons/like-black@2x.png",
+        "48": "/icons/like-black@3x.png",
+        "64": "/icons/like-black@4x.png",
+        "128": "/icons/like-black@8x.png"
+    }
+}
